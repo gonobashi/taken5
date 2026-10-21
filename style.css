@@ -1,0 +1,162 @@
+/* === リセット・全体設定 === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* === ヘッダー === */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #008080;
+    text-decoration: none;
+}
+
+/* === メインエリア === */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #111111;
+}
+
+.page-description {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+/* === カード一覧（レイアウト） === */
+.spot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.spot-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.spot-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* === 画像パーツ === */
+.spot-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #e0e0e0;
+}
+
+.spot-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spot-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #ffffff;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* === カード本文パーツ === */
+.spot-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.spot-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222222;
+}
+
+.spot-text {
+    font-size: 13px;
+    color: #666666;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.spot-footer {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* === ボタンパーツ === */
+.btn {
+    display: inline-block;
+    background-color: #008080;
+    color: #ffffff;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #006666;
+}
+
+/* === フッター === */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #888888;
+    margin-top: 40px;
+    border-top: 1px solid #e0e0e0;
+    background-color: #ffffff;
+}
