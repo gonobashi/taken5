@@ -160,3 +160,9 @@ footer {
     border-top: 1px solid #e0e0e0;
     background-color: #ffffff;
 }
+
+.logo img {
+    height: 40px; /* 好みの高さに調整してください */
+    width: auto;  /* 比率を保ったまま横幅を自動調整 */
+    display: block;
+}
